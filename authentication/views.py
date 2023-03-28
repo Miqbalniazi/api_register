@@ -11,6 +11,7 @@ import jwt
 
 class RegisterView(GenericAPIView):
     serializer_class = UserSerializer
+    # comment
     # Generated token f743cbd1e215064b6636dde063ff8d2c2aa9aad9 for user mudassir
     def post(self, request ):
         serializer=UserSerializer(data=request.data)
